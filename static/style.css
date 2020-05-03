@@ -1,0 +1,47 @@
+/* .grid{
+  display: grid;
+  grid-gap: 5px;
+  text-align: center;
+}
+
+.header{
+  grid-area: 1 / 1 / 2 / 6;
+  background-color: lightskyblue;
+}
+
+.channels{
+  grid-area: 2 / 1 / 6 / 2;
+  background-color: lightslategray;
+}
+
+.name{
+  grid-area: 2 / 2 / 3 / 6;
+  background-color: lightskyblue;
+}
+
+#messages{
+  display: flex;
+  flex-direction: column-reverse;
+  grid-area: 3 / 2 / 5 / 6;
+  background-color: lightslategrey;
+  height: 640px;
+}
+
+.eachChat{
+  justify-content: end;
+  padding: 5px;
+}
+
+.eachChat span{
+  display: block;
+  padding: 5px;
+}
+
+.chat{
+  grid-area: 5 / 2 / 6 / 6;
+  background-color: lightslategrey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+} */

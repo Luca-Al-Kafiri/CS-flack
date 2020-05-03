@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="/static/style.css"> -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"
+    integrity="sha256-yr4fRk/GU1ehYJPAs8P4JlTgu0Hdsp4ZKrx8bDEDC3I=" crossorigin="anonymous"></script>
+  <script src="/static/js.js"></script>
+  <title>Flack</title>
+</head>
+
+<body>
+  <div class="grid">
+    <div class="header">
+      <h1>Welcome</h1>
+    </div>
+    <div class="channels">
+      <h3>channels</h3>
+      <form action="">
+      <input id="create_channel" type="text">
+      <button id="create" type="submit" data-create="create">Create</button>
+    </form>
+      <div>
+        <ul id="channels">
+          {% for channel in channels %}
+          <li class="all_channel" data-channel="{{ channel }}">{{ channel }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    <div class="name">
+      <h3 id="channel_name"></h3>
+    </div>
+    <div id="messages">
+      <ul id="chat">
+
+      </ul>
+    </div>
+    <div class="chat">
+      <input autofocus id="new_chat" type="text">
+      <button id="send" type="submit">Send</button>
+    </div>
+  </div>
+</body>
+
+</html>
